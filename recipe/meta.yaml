@@ -1,4 +1,4 @@
-{% set version = '0.3.1' %}
+{% set version = "0.3.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lcars_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lcars/lcars_{{ version }}.tar.gz
-  sha256: ab1af314e3b4b8ba6b4cfab680c0e18649fb90670011aeea37a8f4bd18b90692
+  sha256: bec2d19bbd27e0ecd4cc9dc4383a759764d775290c8882a9a04351d2c1e00d01
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -42,13 +42,10 @@ test:
 about:
   home: https://github.com/leonawicz/lcars
   license: MIT
-  summary: Provides Shiny widgets and theme that support a 'Library Computer Access/Retrieval
-    System' (LCARS) aesthetic for Shiny apps. The package also includes functions for
-    adding a minimal LCARS theme to static 'ggplot2' graphs. More details about LCARS
-    can be found at <https://en.wikipedia.org/wiki/LCARS>.
+  summary: Provides Shiny widgets and theme that support a 'Library Computer Access/Retrieval System' (LCARS) aesthetic for Shiny apps. The package also includes functions for adding a minimal LCARS theme to static 'ggplot2' graphs. More details about LCARS can be found at <https://en.wikipedia.org/wiki/LCARS>.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
