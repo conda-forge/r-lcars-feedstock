@@ -5,11 +5,9 @@ Home: https://github.com/leonawicz/lcars
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lcars-feedstock/blob/master/LICENSE.txt)
 
 Summary: Provides Shiny widgets and theme that support a 'Library Computer Access/Retrieval System' (LCARS) aesthetic for Shiny apps. The package also includes functions for adding a minimal LCARS theme to static 'ggplot2' graphs. More details about LCARS can be found at <https://en.wikipedia.org/wiki/LCARS>.
-
-
 
 Current build status
 ====================
