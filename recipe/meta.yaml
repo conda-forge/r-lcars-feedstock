@@ -1,4 +1,4 @@
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lcars_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lcars/lcars_{{ version }}.tar.gz
-  sha256: bec2d19bbd27e0ecd4cc9dc4383a759764d775290c8882a9a04351d2c1e00d01
+  sha256: aeed8560ece902e6377bb716939ff823cc6c42889547f960a9ec2b750a6554c2
 
 build:
   merge_build_host: true  # [win]
