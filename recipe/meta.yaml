@@ -1,4 +1,4 @@
-{% set version = "0.4.0" %}
+{% set version = "0.4.1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lcars_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lcars/lcars_{{ version }}.tar.gz
-  sha256: 7289d77433e67bc35a59f4653fa96c0314e1a0493301a7b7aeb36a12ad6d2eec
+  sha256: 2d3e5051115877865329ffb6d8ff1be8af9f9f1dd47df0a46246c75ab51e76b6
 
 build:
   number: 0
